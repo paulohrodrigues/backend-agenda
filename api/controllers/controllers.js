@@ -2,7 +2,6 @@
 
 var model = require('../models/models');
 
-//function for getting all available tasks
 exports.create = function(req, res){
     model.create(req.body)
     .then((r)=>{

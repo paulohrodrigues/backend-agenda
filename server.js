@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-var routes = require('./api/routes/todoListRoutes'); //importing route
+var routes = require('./api/routes/routes'); //importing route
 routes(app);
 console.log(routes);
  //register the route file

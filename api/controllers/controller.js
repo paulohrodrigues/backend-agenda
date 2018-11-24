@@ -1,6 +1,6 @@
 'use strict';
 
-var model = require('../models/todaListModels');
+var model = require('../models/models');
 
 //function for getting all available tasks
 exports.create = function(req, res){

@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(app) {
-    var ctrl = require('../controllers/controller');
+    var ctrl = require('../controllers/controllers');
 
   // ctrl Routes
     app.route('/agenda')

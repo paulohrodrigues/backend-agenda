@@ -1,0 +1,33 @@
+{
+  "name": "agenda",
+  "version": "1.0.0",
+  "description": "RestFull API Agenda",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulohrodrigues/backend-agenda.git"
+  },
+  "keywords": [
+    "restfull",
+    "api",
+    "agenda"
+  ],
+  "author": "Paulo Henrique R Abreu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulohrodrigues/backend-agenda/issues"
+  },
+  "homepage": "https://github.com/paulohrodrigues/backend-agenda#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "firebase-admin": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}

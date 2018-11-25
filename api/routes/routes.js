@@ -15,7 +15,7 @@ module.exports = (app) => {
   * @apiName CreateContacts
   * @apiGroup Contacts
   *
-  *  @apiParam {JSON} Data contacts for save
+  *  @apiParam {JSON} Data contacts for save. Example: {name: 'José', number: 82999315616}
   *
   * @apiSuccess {JSON} JSON any of firestore
   */
@@ -38,7 +38,7 @@ module.exports = (app) => {
   * @apiGroup Contacts
   *
   * @apiParam {String} id contacts unique ID.
-  * @apiParam {JSON} Data contacts for updated
+  * @apiParam {JSON} Data contacts for updated {name: 'José', number: 82999315616}
   *
   * @apiSuccess {JSON} JSON any of firestore
   */

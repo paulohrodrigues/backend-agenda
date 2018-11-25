@@ -13,7 +13,7 @@ define({ "api": [
             "type": "JSON",
             "optional": false,
             "field": "Data",
-            "description": "<p>contacts for save</p>"
+            "description": "<p>contacts for save. Example: {name: 'José', number: 82999315616}</p>"
           }
         ]
       }
@@ -115,7 +115,7 @@ define({ "api": [
             "type": "JSON",
             "optional": false,
             "field": "Data",
-            "description": "<p>contacts for updated</p>"
+            "description": "<p>contacts for updated {name: 'José', number: 82999315616}</p>"
           }
         ]
       }

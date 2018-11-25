@@ -12,10 +12,10 @@ database.settings({timestampsInSnapshots: true});
 
 //configuration Firebase - END -----------------------------------------------------------------
 
-/** @description Model responsible for managing the contact register   
- * @param {any} require 
+/** @description Model responsible for managing the contact register
+ * @param {any} require
  * @param {any} response
- * @return {json}  
+ * @return {json}
  */
 exports.create = (body) => {
     return new Promise((resolve)=>{
@@ -31,10 +31,10 @@ exports.create = (body) => {
     });
 }
 
-/** @description Model responsible for listing contacts 
- * @param {any} require 
+/** @description Model responsible for listing contacts
+ * @param {any} require
  * @param {any} response
- * @return {json}  
+ * @return {json}
  */
 exports.read = () => {
     return new Promise((resolve)=>{
@@ -54,9 +54,9 @@ exports.read = () => {
 }
 
 /** @description Model responsible for updating contacts
- * @param {any} require 
+ * @param {any} require
  * @param {any} response
- * @return {json}  
+ * @return {json}
  */
 exports.update = (id, body) => {
     return new Promise((resolve)=>{
@@ -71,10 +71,10 @@ exports.update = (id, body) => {
     });
 }
 
-/** @description Model responsible for deleting contacts  
- * @param {any} require 
+/** @description Model responsible for deleting contacts
+ * @param {any} require
  * @param {any} response
- * @return {json}  
+ * @return {json}
  */
 exports.delete = (id) => {
     return new Promise((resolve)=>{

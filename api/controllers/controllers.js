@@ -2,10 +2,10 @@
 
 var model = require('../models/models');
 
-/** @description Control responsible for managing the contact register   
- * @param {any} require 
+/** @description Control responsible for managing the contact register
+ * @param {any} require
  * @param {any} response
- * @return {json}  
+ * @return {json}
  */
 exports.create = (req, res) => {
     model.create(req.body)
@@ -17,10 +17,10 @@ exports.create = (req, res) => {
     });
 };
 
-/** @description Control responsible for listing contacts 
- * @param {any} require 
+/** @description Control responsible for listing contacts
+ * @param {any} require
  * @param {any} response
- * @return {json}  
+ * @return {json}
  */
 exports.read = (req, res) => {
     model.read()
@@ -33,9 +33,9 @@ exports.read = (req, res) => {
 }
 
 /** @description Control responsible for updating contacts
- * @param {any} require 
+ * @param {any} require
  * @param {any} response
- * @return {json}  
+ * @return {json}
  */
 exports.update = (req, res) => {
     model.update(req.params.id,req.body)
@@ -47,10 +47,10 @@ exports.update = (req, res) => {
     });
 };
 
-/** @description Control responsible for deleting contacts  
- * @param {any} require 
+/** @description Control responsible for deleting contacts
+ * @param {any} require
  * @param {any} response
- * @return {json}  
+ * @return {json}
  */
 exports.delete = (req, res) => {
     model.delete(req.params.id)

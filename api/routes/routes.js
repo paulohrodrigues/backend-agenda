@@ -6,7 +6,7 @@ module.exports = (app) => {
   *  @api {get} /agenda/ list contacts
   * @apiName ReadContacts
   * @apiGroup Contacts
-  * 
+  *
   * @apiSuccess {JSON} JSON any of firestore
   */
   app.route('/agenda').get(ctrl.read);
@@ -31,7 +31,7 @@ module.exports = (app) => {
   * @apiSuccess {JSON} JSON any of firestore
   */
   app.route('/modify/:id').delete(ctrl.delete);
-  
+
   /**
   * @api {update} /modify/:id update contacts
   * @apiName UpdateContacts

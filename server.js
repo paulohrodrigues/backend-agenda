@@ -21,7 +21,7 @@ console.log(routes);
  });
 
  //middleware added to check if user enters not found route 
- app.use(function(req, res) {
+ app.use((req, res) => {
     res.status(404).send({url: req.originalUrl + ' not found'})
   });
 

@@ -1,13 +1,46 @@
 'use strict';
-module.exports = function(app) {
-    var ctrl = require('../controllers/controllers');
+module.exports = (app) => {
+  const ctrl = require('../controllers/controllers');
 
-  // ctrl Routes
-    app.route('/agenda')
-        .get(ctrl.read)
-        .post(ctrl.create);
+  /**
+  *  @api {get} /agenda/ list contacts
+  * @apiName ReadContacts
+  * @apiGroup Contacts
+  * 
+  * @apiSuccess {JSON} JSON any of firestore
+  */
+  app.route('/agenda').get(ctrl.read);
+  /**
+  * @api {post} /agenda/ create contacts
+  * @apiName CreateContacts
+  * @apiGroup Contacts
+  *
+  *  @apiParam {JSON} Data contacts for save
+  *
+  * @apiSuccess {JSON} JSON any of firestore
+  */
+  app.route('/agenda').post(ctrl.create);
 
-    app.route('/modify/:id')
-      .delete(ctrl.delete)
-      .put(ctrl.update);
+  /**
+  * @api {delete} /modify/:id delete contacts
+  * @apiName DeleteContacts
+  * @apiGroup Contacts
+  *
+  * @apiParam {String} id contacts unique ID.
+  *
+  * @apiSuccess {JSON} JSON any of firestore
+  */
+  app.route('/modify/:id').delete(ctrl.delete);
+  
+  /**
+  * @api {update} /modify/:id update contacts
+  * @apiName UpdateContacts
+  * @apiGroup Contacts
+  *
+  * @apiParam {String} id contacts unique ID.
+  * @apiParam {JSON} Data contacts for updated
+  *
+  * @apiSuccess {JSON} JSON any of firestore
+  */
+  app.route('/modify/:id').put(ctrl.update);
 };

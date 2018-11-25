@@ -2,7 +2,12 @@
 
 var model = require('../models/models');
 
-exports.create = function(req, res){
+/** @description Control responsible for managing the contact register   
+ * @param {any} require 
+ * @param {any} response
+ * @return {json}  
+ */
+exports.create = (req, res) => {
     model.create(req.body)
     .then((r)=>{
         res.json(r);
@@ -12,7 +17,12 @@ exports.create = function(req, res){
     });
 };
 
-exports.read = function(req, res){
+/** @description Control responsible for listing contacts 
+ * @param {any} require 
+ * @param {any} response
+ * @return {json}  
+ */
+exports.read = (req, res) => {
     model.read()
     .then((r)=>{
         res.json(r);
@@ -22,7 +32,12 @@ exports.read = function(req, res){
     });
 }
 
-exports.update = function(req, res) {
+/** @description Control responsible for updating contacts
+ * @param {any} require 
+ * @param {any} response
+ * @return {json}  
+ */
+exports.update = (req, res) => {
     model.update(req.params.id,req.body)
     .then((r)=>{
         res.json(r);
@@ -32,7 +47,12 @@ exports.update = function(req, res) {
     });
 };
 
-exports.delete = function(req, res) {
+/** @description Control responsible for deleting contacts  
+ * @param {any} require 
+ * @param {any} response
+ * @return {json}  
+ */
+exports.delete = (req, res) => {
     model.delete(req.params.id)
     .then((r)=>{
         res.json(r);

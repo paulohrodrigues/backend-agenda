@@ -43,9 +43,9 @@ exports.read = () => {
         .then((result)=>{
             var json = [];
             result.docs.forEach((r)=>{
-                let json    = r.data();
-                json['id']  = r.id;
-                json.push(json);
+                let jsonId    = r.data();
+                jsonId['id']  = r.id;
+                json.push(jsonId);
             });
             resolve(json);
         })

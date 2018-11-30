@@ -1,0 +1,143 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+#app {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#app::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.people-list, .person-add {
+  float: left;
+  display: block;
+  padding: 3%;
+}
+.people-list:last-child, .person-add:last-child {
+  margin-right: 0;
+
+}
+
+.people-list .search {
+  width: 100%;
+  
+  
+}
+.people-list .search .search_input {
+  width: 100%;
+  padding: 10% ;
+  box-sizing: border-box;
+  border: 2px solid #404042;
+  border-radius: px;
+}
+.people-list .list {
+  list-style-type: none;
+  padding: 5%;
+
+}
+.people-list .list li {
+  margin: 0 0 30px;
+  text-align: left;
+}
+
+.person-add .add-form .form-field {
+  margin: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+.person-add .add-form .form-field label {
+  text-align: left;
+  float: left;
+  display: block;
+  width: 25%;
+}
+.person-add .add-form .form-field label:last-child {
+  margin-right: 0;
+}
+.person-add .add-form .form-field input {
+  float: left;
+  display: block;
+  margin-right: 2%;
+  width: 70%;
+}
+.person-add .add-form .form-field input:last-child {
+  margin-right: 0;
+}
+.person-add .add-form button {
+  float: left;
+  display: block;
+  width: 30%;
+  margin-left: 40%;
+
+}
+
+.Tittle {
+  font-family: Helvetica;
+  font-size: 180%;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #429d92;
+}
+.forms{
+  box-sizing: border-box;
+  border: 2px solid #404042;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: #404042; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.distanceA{
+  padding-left: 20px;
+}
+
+.distanceB{
+  padding-left: 20px;
+}
+
+.buttonB {
+  
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.back1{
+  background-color: blue; 
+}
+
+.back2 {
+  background-color: red; 
+}
